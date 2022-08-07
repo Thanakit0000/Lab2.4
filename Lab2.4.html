@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+        USERNAME :
+        <input type="text" name="Username" placeholder="Username" pattern="[A-Z]+">
+        <br> Student Number :
+        <input type="text" name="Student number" placeholder="Student number" pattern="[0-9]{2}-[0-9]{6}-[0-9]{4}-[0-9]">
+        <br> House number :
+        <input type="text" name="House number" placeholder="House number" pattern="[0-9]([0-9]|/)+">
+        <br> Product code :
+        <input type="text" name="Product code" placeholder="Product code" pattern="[A-Z]{3}[0-9]{2}">
+        <br> Thai name :
+        <input type="text" name="Thai name" placeholder="Thai name" pattern="[ก-๏][ก-๏\s]+">
+        <br>
+
+        <p><label>สาขาวิชา:</label>
+            <select name="dept">
+            <option value="">--Please choose an option--</option>
+            <option value="CS">CS</option>
+            <option value="IC">IC</option>
+            <option value="MA">MA</option>
+            <option value="IMI">IMI</option>
+            <option value="AS">AS</option>
+            <option value="AFET">AFET</option>
+        </select>
+        </p><input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
